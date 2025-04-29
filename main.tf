@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "newbucket" {
 }
 
 resource "aws_instance" "new-instance" { 
-    instance_type = "t2-micro"
+    instance_type = "t2.micro"
     key_name = "jenkins_key"
     ami = "ami-084568db4383264d4"
       tags = { 
